@@ -43,6 +43,7 @@ Kept current per this project's own index-maintenance discipline (see
 ## `data/` — source material
 
 - `README.md` — what's present, what's needed, and the sibling-data citation discipline
+- `scripts/index_corpus_qdrant.py` — embeds this repo's own logs/comms/knowledge-base into Qdrant (linuxbox, `nomic-embed-text`) for semantic search/navigation only — never a substitute for measured evaluation
 
 ## `docs/` — public site (GitHub Pages, deploy on push to `main` under `docs/`)
 

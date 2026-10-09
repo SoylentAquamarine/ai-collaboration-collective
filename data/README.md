@@ -17,6 +17,18 @@ Nothing yet. See `config/sidequests.md` SQ-1 (baseline-data mining) — the foun
 
 Every sibling repository is separately MIT-licensed and carries its own permanent, public record. This project reuses that record as data — it never absorbs it silently as if it were this project's own original material. Every mined incident or quoted entry cites its exact source repository, file, and commit (or dated entry).
 
+## Tooling
+
+- **`scripts/index_corpus_qdrant.py`** — embeds this repo's own `logs/`,
+  `comms/`, `knowledge-base/state.md`, and `methods/` into a Qdrant vector
+  collection (`ai-collaboration-collective`) via the linuxbox's
+  `nomic-embed-text` model, for semantic search/navigation over this
+  project's own prior work. Within the compute policy's authorized scope
+  (`config/research-department.md`): a navigation aid only, never a
+  substitute for Claude/ChatGPT's own measured evaluation. Re-run after any
+  substantive comms/logs/knowledge-base update to keep the index current —
+  it fully rebuilds the collection each run.
+
 ## Convention
 
 Any reference file added here should note its source and retrieval date. A protocol-experiment file should note the exact commit/version of this project's own files at the time of the trial, so the experiment can be understood in context even after the mechanism itself evolves further.
