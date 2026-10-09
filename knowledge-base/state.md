@@ -8,10 +8,15 @@ git log of this file — nothing here is ever silently overwritten.
 
 ## Confirmed Findings (Recommended Mechanisms)
 
-_(none yet — genuine bootstrap state. The first substantive work is mining
-the sibling projects' own comms/meeting history for a real baseline
-(SQ-1), which is itself infrastructure, not a finding, per
-`methods/falsification-standard.md`.)_
+_(none yet — SQ-1's baseline catalog is infrastructure, not a finding or a recommended mechanism, per
+`methods/falsification-standard.md`. No mechanism has been proposed, trialed, or measured yet.)_
+
+## Baseline (infrastructure, not a finding)
+
+Five real, citable collaboration-friction incidents mined from three sibling repos' own meeting history —
+see `data/baseline-incident-catalog.md`. A first pass, not yet exhaustive (3 of 9 sibling repos checked).
+This is the raw material SQ-4's first protocol experiment will be designed against, not itself a claim
+about what works.
 
 ## Mechanisms Proposed / Trialed, Not Yet Confirmed
 
@@ -26,8 +31,9 @@ silently dropped — see `methods/falsification-standard.md`.)_
 ## Open Questions
 
 - What real, already-disclosed collaboration-friction patterns exist in
-  the sibling projects' own comms and meeting history? See SQ-1 — this is
-  the foundational open question everything else depends on.
+  the sibling projects' own comms and meeting history? See SQ-1 —
+  **partially answered (2026-10-09)**: five found across 3 of 9 repos, see
+  `data/baseline-incident-catalog.md`; six repos still unchecked.
 - What metrics can actually be computed mechanically and reproducibly
   from a project's own comms/meeting files, versus sounding appealing but
   requiring unreliable subjective judgment? See SQ-3.

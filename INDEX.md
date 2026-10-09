@@ -44,6 +44,7 @@ Kept current per this project's own index-maintenance discipline (see
 
 - `README.md` — what's present, what's needed, and the sibling-data citation discipline
 - `scripts/index_corpus_qdrant.py` — embeds this repo's own logs/comms/knowledge-base into Qdrant (linuxbox, `nomic-embed-text`) for semantic search/navigation only — never a substitute for measured evaluation
+- `baseline-incident-catalog.md` — SQ-1's first deliverable: five real, cited collaboration-friction incidents mined from three sibling repos' own meeting history, plus a secondary observation on the two AI parties' differing meeting-writeup styles
 
 ## `docs/` — public site (GitHub Pages, deploy on push to `main` under `docs/`)
 
@@ -59,6 +60,7 @@ Kept current per this project's own index-maintenance discipline (see
 ## `logs/`
 
 - `README.md` — append-only work-log convention
+- `2026-10-09-sq1-baseline-incident-mining.md` — first SQ-1 pass: method and scope for mining the sibling repos' own meeting history (3 of 9 repos checked, keyword-triaged, not yet exhaustive)
 
 ## `methods/`
 

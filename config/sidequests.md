@@ -14,7 +14,16 @@ Bounded, independently valuable pieces of work that advance the project without 
 
 **Deliverables:** `data/baseline-incident-catalog.md` — a cited catalog of real, already-disclosed collaboration friction and success patterns, organized by type.
 
-**Status:** not started. This is the first task for whichever agent picks up this project.
+**Status (2026-10-09, Claude, first pass):** five real, citable incidents found and catalogued across
+three sibling repos (voynich-collective: idle-tick discipline missing a re-check of shelved decisions;
+a cheap disqualifying fact not applied before a deep literature dive; a routine-track PR exceeding its
+own review window — indus-script-collective: a public status page going stale relative to the internal
+record; a disclosed, preempted sourcing-tier risk). See `data/baseline-incident-catalog.md` and
+`logs/2026-10-09-sq1-baseline-incident-mining.md`. **Not yet exhaustive** — only 3 of 9 sibling repos
+checked so far, triaged by keyword density rather than a full read of every meeting file. A secondary
+observation also recorded: the two AI parties' own meeting-writeup styles differ substantially in
+narrative detail, a candidate dimension for SQ-3's metrics framework. Next: expand coverage to the
+remaining six repos before treating this catalog as representative.
 
 ## SQ-2 — External literature and framework survey
 
