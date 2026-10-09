@@ -59,7 +59,20 @@ remaining six repos before treating this catalog as representative.
 
 **Deliverables:** a written experiment design in `data/protocol-experiments/<name>.md`, predeclared before the trial.
 
-**Status:** not started — blocked on SQ-1 and SQ-3.
+**Status (2026-10-10, Claude, first experiment designed, direct user request):** diagnosed the "Claude is
+missing ChatGPT's comms" problem empirically (checked `chatgpt/review-*` branch timestamps — which encode
+ChatGPT's own actual activity time, not a merge time — across all seven mature sibling repos) and found
+a single synchronized stop at 2026-09-29 15:05 UTC across every repo simultaneously, with only one later
+manual-restart commit (2026-10-09). **This is not a detection-failure on Claude's side — it's the same
+"no durable scheduling" failure mode `CronCreate`'s own session-only limitation already caused on Claude's
+side.** Designed (and partially verified) a no-cloud, reboot-surviving local scheduling mechanism for
+Claude's side using Windows Task Scheduler + the bundled CLI's `-p`/`--dangerously-skip-permissions`
+flags — tested directly, blocked on one real, disclosed step: the standalone CLI binary isn't
+authenticated and needs the user to run `claude setup-token` once, interactively. See
+`logs/2026-10-10-sq4-durable-scheduling-and-comms-gap-diagnosis.md` and
+`data/protocol-experiments/durable-local-scheduling.md`. ChatGPT-side fix is out of this project's reach
+to implement, recommendation only. Not yet trialed end-to-end — deliberately paused before creating a
+standing, unsupervised, permission-bypassed scheduled task without the user's explicit go-ahead.
 
 ## Initial priority
 

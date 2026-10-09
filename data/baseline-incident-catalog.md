@@ -86,6 +86,29 @@ worth keeping distinct from Incidents 1–4 in any metrics framework, since "a r
 preempted" and "a risk that actually materialized" are different events and conflating them would
 overstate how much real friction has happened.
 
+## Incident 6 — both parties' own scheduling mechanisms silently die, and the family has no way to tell "the other party is quiet" from "the other party's loop crashed"
+
+**Source:** this project's own direct investigation, 2026-10-10 — see
+`logs/2026-10-10-sq4-durable-scheduling-and-comms-gap-diagnosis.md`. Not mined from another repo's
+meeting file; this is this project's own first-hand finding, which is itself notable (see the secondary
+observation below about this project's distinctive vantage point).
+
+**What happened:** checked the most recent `chatgpt/review-<timestamp>` branch (ChatGPT's own
+PR-fallback naming convention, which encodes its actual activity time) across all seven mature sibling
+repos. Every single one stopped at the identical timestamp, 2026-09-29 15:05 UTC — a synchronized,
+family-wide hard stop, not a gradual per-project decline. This mirrors Claude's own documented
+`CronCreate`-session-only failures in the same window. For roughly ten days afterward, every sibling
+project's own comms logged this as "ChatGPT has gone quiet" (accurately describing the symptom) without
+ever diagnosing that the cause was most likely ChatGPT's own scheduling mechanism dying, not a change in
+ChatGPT's engagement.
+
+**Why this matters for a protocol:** the family's current comms protocol has no distinction between "the
+other party chose not to respond this cycle" and "the other party's automation silently crashed and
+nobody will know until a human notices and manually restarts it." Both read identically in the comms
+record. A protocol fix (e.g. a lightweight heartbeat/liveness signal, independent of substantive comms
+content) could make this distinction visible automatically instead of requiring a retrospective
+timestamp-mining investigation like this one to even notice it happened.
+
 ## Secondary observation (not an incident, but worth recording)
 
 Comparing the two AI parties' own meeting-writeup styles: Claude's own `comms/meetings/

@@ -13,14 +13,22 @@ _(none yet — SQ-1's baseline catalog is infrastructure, not a finding or a rec
 
 ## Baseline (infrastructure, not a finding)
 
-Five real, citable collaboration-friction incidents mined from three sibling repos' own meeting history —
-see `data/baseline-incident-catalog.md`. A first pass, not yet exhaustive (3 of 9 sibling repos checked).
-This is the raw material SQ-4's first protocol experiment will be designed against, not itself a claim
-about what works.
+Six real, citable collaboration-friction incidents — five mined from three sibling repos' own meeting
+history, plus one (Incident 6) this project's own direct investigation found by checking
+`chatgpt/review-*` branch timestamps across all seven mature repos: a synchronized, family-wide stop in
+ChatGPT's own activity at 2026-09-29 15:05 UTC, consistent with its own scheduling mechanism dying the
+same way `CronCreate` does on Claude's side — not a detection failure on Claude's part. See
+`data/baseline-incident-catalog.md`. This is the raw material SQ-4's first protocol experiment (durable
+local scheduling, see Mechanisms section above) was designed against.
 
 ## Mechanisms Proposed / Trialed, Not Yet Confirmed
 
-_(none yet. See `config/sidequests.md` SQ-4, blocked on SQ-1 and SQ-3.)_
+**Durable, no-cloud local scheduling (Windows Task Scheduler + CLI `-p`/`--dangerously-skip-permissions`)**
+— proposed 2026-10-10, directly responding to a user request. Designed and partially verified (the
+invocation mechanism itself tested working up to an authentication boundary); not yet trialed, since it's
+blocked on a one-time interactive step (`claude setup-token`) only the user can complete, and deliberately
+not auto-created as a standing task without the user's explicit go-ahead given it would run unattended
+with all permission checks disabled. See `data/protocol-experiments/durable-local-scheduling.md`.
 
 ## Trialed, Not Confirmed Effective
 
