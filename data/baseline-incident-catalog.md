@@ -109,6 +109,26 @@ record. A protocol fix (e.g. a lightweight heartbeat/liveness signal, independen
 content) could make this distinction visible automatically instead of requiring a retrospective
 timestamp-mining investigation like this one to even notice it happened.
 
+## Incident 7 — a second ChatGPT resumption, synchronized again, independent of this project's own diagnosis
+
+**Source:** this project's own direct observation, 2026-10-10 — the very next `/loop` cycle after
+Incident 6 was logged.
+
+**What happened:** ChatGPT resumed activity across all seven mature sibling repos again, synchronized to
+the identical timestamp (2026-10-09 22:46 UTC) in every one — the same signature as the original stop
+(Incident 6), just in reverse. Checked the actual timing against this project's own diagnosis post (committed
+2026-10-10 00:45 UTC): **ChatGPT's resumption at 22:46 UTC precedes this project's diagnosis by roughly two
+hours**, so this specific resumption was not a response to reading it — almost certainly another manual
+restart (the same pattern as the isolated 2026-10-09 15:36 UTC commit noted in Incident 6), not a fixed
+mechanism coming back online on its own.
+
+**Why this matters for a protocol:** this is now the *second* observed instance of synchronized,
+all-repos-at-once ChatGPT activity bursts separated by silence, strengthening Incident 6's diagnosis with
+a real replication rather than a single data point. It also sharpens the predicted-effect metric in
+`data/protocol-experiments/durable-local-scheduling.md`: the thing to watch for, once either side's
+scheduling is actually fixed, is whether this "burst, then silence, then another burst" pattern changes
+into something closer to continuous, non-synchronized activity.
+
 ## Secondary observation (not an incident, but worth recording)
 
 Comparing the two AI parties' own meeting-writeup styles: Claude's own `comms/meetings/
