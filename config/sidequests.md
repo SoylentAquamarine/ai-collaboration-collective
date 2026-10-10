@@ -44,8 +44,16 @@ vs. 4.4x for centralized coordination, and that multi-agent coordination helps p
 hurts sequential ones. Two search-summary figures (a "79%"/" 41-87%" MAST failure-rate claim; an R²=0.89
 claim for the Google model) did **not** survive a primary-source check and are explicitly not relied upon
 — the primary sources give no such 79% figure and state R²=0.513 instead. Three further leads named but
-unverified. Natural next step: map SQ-1's own 5-incident catalog against MAST's specific failure-mode
-labels.
+unverified.
+
+**Update (2026-10-10), the MAST mapping done — see
+`logs/2026-10-10-sq2-mapping-baseline-incidents-against-mast.md`**: went through all 7 catalogued
+incidents against MAST's 14 modes. Honest result: only Incident 1 has even a loose match (FM-3.2,
+no/incomplete verification) — the other six (including both scheduling-death incidents) describe failure
+types MAST's taxonomy has no equivalent for, since MAST studies continuously-running multi-agent
+frameworks, not an async, session-scoped, human-supervised model like this family's own. Consequence for
+SQ-3: don't adopt MAST's modes wholesale; this project needs its own vocabulary, built around its own
+distinctive failure types (cross-session scheduling/liveness above all).
 
 ## SQ-3 — Metrics framework
 

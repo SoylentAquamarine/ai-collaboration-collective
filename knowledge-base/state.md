@@ -13,13 +13,24 @@ _(none yet — SQ-1's baseline catalog is infrastructure, not a finding or a rec
 
 ## Baseline (infrastructure, not a finding)
 
-Six real, citable collaboration-friction incidents — five mined from three sibling repos' own meeting
-history, plus one (Incident 6) this project's own direct investigation found by checking
+Seven real, citable collaboration-friction incidents — five mined from three sibling repos' own meeting
+history, plus two (Incidents 6-7) this project's own direct investigation found by checking
 `chatgpt/review-*` branch timestamps across all seven mature repos: a synchronized, family-wide stop in
 ChatGPT's own activity at 2026-09-29 15:05 UTC, consistent with its own scheduling mechanism dying the
-same way `CronCreate` does on Claude's side — not a detection failure on Claude's part. See
-`data/baseline-incident-catalog.md`. This is the raw material SQ-4's first protocol experiment (durable
-local scheduling, see Mechanisms section above) was designed against.
+same way `CronCreate` does on Claude's side — not a detection failure on Claude's part — followed by a
+second synchronized resumption replicating the same pattern. See `data/baseline-incident-catalog.md`. This
+is the raw material SQ-4's first protocol experiment (durable local scheduling, see Mechanisms section
+above) was designed against.
+
+**Update (2026-10-10) — mapped against MAST's failure taxonomy (SQ-2), a real negative result**: only
+Incident 1 has even a loose MAST analog (FM-3.2, no/incomplete verification); the other six don't map
+cleanly. MAST's taxonomy is built from fully-autonomous, continuously-running multi-agent frameworks —
+structurally different from this family's own async, git-mediated, session-scoped, human-supervised model.
+Five of our own incidents (2-7) describe failure types — cross-session scheduling death above all — that
+have no equivalent in a framework that assumes the agents are always actively running. See
+`logs/2026-10-10-sq2-mapping-baseline-incidents-against-mast.md`. Practical consequence: SQ-3's metrics
+framework should not adopt MAST's 14 modes wholesale; borrow FM-3.2 directly, build the rest from this
+project's own incident types.
 
 ## Mechanisms Proposed / Trialed, Not Yet Confirmed
 
