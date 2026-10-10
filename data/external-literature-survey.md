@@ -1,0 +1,102 @@
+# SQ-2 — External literature and framework survey (first pass)
+
+Situates this project's own sibling-derived incident catalog (`data/baseline-incident-catalog.md`) against
+published research on multi-agent LLM collaboration — outside this project's own family — so later protocol
+proposals build on, and are honestly compared against, what's already known rather than reinventing it from
+seven repos' worth of comms logs alone.
+
+## 1. MAST — "Why Do Multi-Agent LLM Systems Fail?" (Cemri et al., arXiv:2503.13657)
+
+**Directly fetched** (arXiv abstract page + full HTML text, not a search-summary). Authors: Mert Cemri,
+Melissa Z. Pan, Shuyi Yang, Lakshya A. Agrawal, Bhavya Chopra, Rishabh Tiwari, Kurt Keutzer, Aditya
+Parameswaran, Dan Klein, Kannan Ramchandran, Matei Zaharia, Joseph E. Gonzalez, Ion Stoica — a UC Berkeley-
+led academic paper, not vendor material. Builds MAST (Multi-Agent System Failure Taxonomy) from 1,600+
+annotated execution traces across 7 popular frameworks (including AutoGen, MetaGPT, ChatDev), with the
+taxonomy itself validated on 150 traces at high inter-annotator agreement (Cohen's kappa = 0.88) — a real
+methodological strength worth noting, since this project's own incident catalog has no comparable
+inter-annotator check yet.
+
+**The 14 failure modes, by category, with the paper's own reported frequency (% of traces exhibiting that
+mode):**
+
+**FC1 — System Design Issues**
+- FM-1.1 Disobey task specification (11.8%)
+- FM-1.2 Disobey role specification (1.5%)
+- FM-1.3 Step repetition (15.7%)
+- FM-1.4 Loss of conversation history (2.8%)
+- FM-1.5 Unaware of termination conditions (12.4%)
+
+**FC2 — Inter-Agent Misalignment**
+- FM-2.1 Conversation reset (2.2%)
+- FM-2.2 Fail to ask for clarification (6.8%)
+- FM-2.3 Task derailment (7.4%)
+- FM-2.4 Information withholding (0.85%)
+- FM-2.5 Ignored other agent's input (1.9%)
+- FM-2.6 Reasoning-action mismatch (13.2%)
+
+**FC3 — Task Verification**
+- FM-3.1 Premature termination (6.2%)
+- FM-3.2 No or incomplete verification (8.2%)
+- FM-3.3 Incorrect verification (9.1%)
+
+**Disclosed limitation**: the paper's own text (as extracted) does not give a single category-level
+percentage breakdown; summing the individual mode percentages gives roughly FC1≈44%, FC2≈32%, FC3≈23.5% —
+**this sum is this project's own arithmetic, not a figure the paper itself states**, and modes likely
+co-occur within a single trace, so these sums should not be read as mutually exclusive shares of all
+failures. Separately, an initial WebSearch pass (search-synthesis tier) reported "79% of failures originate
+from specification and coordination issues" and a "41-87% failure rate" range attributed to this paper —
+**neither figure could be confirmed in the directly-fetched text** and both are explicitly not relied upon
+here, flagged as a case where a frequently-repeated secondary-source figure did not survive a primary check.
+
+**Relevance to this project's own catalog**: mapping our five incidents (idle-tick discipline gap, a
+skipped cheap disqualifying fact, a stale PR, a stale public status page, a disclosed-and-preempted sourcing
+risk — see `data/baseline-incident-catalog.md`) against MAST's taxonomy is a natural next step, not done in
+this pass: several look like informal instances of FM-3.2 (no/incomplete verification) and FM-1.5 (unaware
+of termination conditions), worth checking rigorously rather than asserting from memory.
+
+## 2. "Towards a Science of Scaling Agent Systems" (Google Research/DeepMind/MIT, arXiv:2512.08296)
+
+**Directly fetched** (Google Research's own blog post, a first-party source, not a secondary summary).
+December 2025/January 2026 work; 180 controlled agent configurations tested, holding tools/prompts/token
+budgets constant to isolate the effect of coordination topology from model choice.
+
+**Headline finding, quoted**: multi-agent coordination "dramatically improves performance on parallelizable
+tasks but degrades it on sequential ones." On parallelizable finance tasks, centralized coordination
+improved performance by 80.9% over a single agent; on sequential PlanCraft tasks, every multi-agent variant
+degraded performance by 39-70%. **Directly relevant to this project's own context**: this family's
+Claude/ChatGPT review work across ten independent repos is close to the parallelizable case this paper finds
+multi-agent coordination helps most — a reason for cautious optimism about this project's own premise, not
+yet an endorsement, since the paper's domains (finance, PlanCraft) are not this project's own.
+
+**Error amplification, quoted exactly**: independent (decentralized) systems "amplified errors by up to
+17.2x" relative to a single-agent baseline; centralized (orchestrated) systems "contained this amplification
+to just 4.4x," with the orchestrator acting as a "validation bottleneck" that catches errors before they
+propagate. No figure given for hybrid/partially-centralized topologies.
+
+**Predictive model**: R² = 0.513 (leave-one-domain-out cross-validation), correctly identifying the optimal
+coordination strategy for 87% of held-out task configurations. **Disclosed discrepancy**: an initial
+WebSearch pass reported this model's R² as 0.89 — the directly-fetched primary source states 0.513. This is
+recorded as a real, unresolved discrepancy between a secondary summary and the primary source, not silently
+resolved in either direction; the primary-source figure (0.513) is the one this project treats as
+authoritative going forward, per this project's own direct-fetch-over-search-summary discipline.
+
+## 3. Other leads surfaced, not yet directly verified (flagged for a future pass)
+
+- **Wynn et al. (2025)** — reported (search-synthesis tier only) to document how alignment pressure within
+  a debate-style multi-agent loop can suppress correct minority views. Not yet directly fetched.
+- **Xu et al. (2026)** — reported (search-synthesis tier only) to find simpler single-agent baselines, given
+  the same tools and context, often match or exceed multi-agent workflows at lower cost — a useful
+  counterweight worth checking directly before this project leans too hard on "more agents helps."
+- **Protocol-level practitioner guidance** (structured messaging standards like MCP, "judge agent" patterns
+  for catching hallucination/premature termination/spec violations before cascade) — explicitly **vendor/
+  blog-tier, not peer-reviewed**, named here only to keep it clearly separated from the two academic sources
+  above, per this sidequest's own scope requirement to distinguish research findings from marketing material.
+
+## Honest bottom line
+
+Two real, directly-fetched, citable academic sources now on file (MAST's 14-mode failure taxonomy; the
+Google scaling-agent-systems paper's topology/error-amplification findings), both with at least one
+disclosed correction to an initial search-summary figure that didn't survive a primary check. This is a
+first pass, not a comprehensive survey — the three further leads above remain unverified, and no formal
+comparison between this project's own 5-incident catalog and MAST's taxonomy has been attempted yet (named
+as the natural next step).

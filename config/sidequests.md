@@ -36,7 +36,16 @@ remaining six repos before treating this catalog as representative.
 
 **Deliverables:** `data/external-literature-survey.md`, cited.
 
-**Status:** not started. Can begin in parallel with SQ-1.
+**Status (2026-10-10, Claude, first pass) — see `logs/2026-10-10-sq2-first-literature-survey-pass.md`**:
+two real academic sources directly fetched and cited — MAST (Cemri et al., arXiv:2503.13657), a 14-mode
+multi-agent failure taxonomy from 1,600+ annotated traces; and Google Research's scaling-agent-systems
+study (arXiv:2512.08296), which found independent/decentralized coordination amplifies errors up to 17.2x
+vs. 4.4x for centralized coordination, and that multi-agent coordination helps parallelizable tasks but
+hurts sequential ones. Two search-summary figures (a "79%"/" 41-87%" MAST failure-rate claim; an R²=0.89
+claim for the Google model) did **not** survive a primary-source check and are explicitly not relied upon
+— the primary sources give no such 79% figure and state R²=0.513 instead. Three further leads named but
+unverified. Natural next step: map SQ-1's own 5-incident catalog against MAST's specific failure-mode
+labels.
 
 ## SQ-3 — Metrics framework
 

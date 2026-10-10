@@ -47,4 +47,11 @@ silently dropped — see `methods/falsification-standard.md`.)_
   requiring unreliable subjective judgment? See SQ-3.
 - What does published research on multi-agent AI collaboration already
   establish that this project should build on rather than rediscover?
-  See SQ-2.
+  See SQ-2. **Partially answered (2026-10-10)**: two directly-fetched academic sources now on file — MAST
+  (Cemri et al., arXiv:2503.13657), a 14-mode multi-agent failure taxonomy from 1,600+ annotated traces; and
+  Google Research's scaling-agent-systems study (arXiv:2512.08296), finding independent/decentralized
+  coordination amplifies errors up to 17.2x vs. 4.4x for centralized coordination, and that multi-agent
+  coordination helps parallelizable tasks but hurts sequential ones. See
+  `data/external-literature-survey.md`. Two search-summary figures explicitly did not survive a
+  primary-source check and are not relied upon. Not yet done: mapping SQ-1's own incident catalog against
+  MAST's specific failure-mode labels.
