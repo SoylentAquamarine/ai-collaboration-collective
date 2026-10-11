@@ -66,6 +66,7 @@ Kept current per this project's own index-maintenance discipline (see
 - `2026-10-10-sq4-durable-scheduling-and-comms-gap-diagnosis.md` — diagnoses the "Claude is missing ChatGPT's comms" problem (a synchronized, family-wide stop in ChatGPT's own activity, not a Claude-side detection failure) and designs a no-cloud, reboot-surviving local scheduling mechanism, verified up to an authentication boundary
 - `2026-10-10-sq2-first-literature-survey-pass.md` — SQ-2's first pass: two directly-fetched academic sources on multi-agent LLM failure modes and coordination topology, with two secondary-source figures checked and found not to survive a primary read
 - `2026-10-10-sq2-mapping-baseline-incidents-against-mast.md` — maps all 7 catalogued incidents against MAST's 14 failure modes; honest result is a near-total miss (only one loose match), since MAST studies continuously-running multi-agent frameworks structurally unlike this family's own async, session-scoped model — informs SQ-3 that this project needs its own metrics vocabulary
+- `2026-10-11-sq2-wynn-debate-failure-modes-verified.md` — directly verifies Wynn et al. (arXiv:2509.05396) on multi-agent debate failure modes, correcting the original search-summary framing; relevant to any future protocol experiment involving extended back-and-forth with ChatGPT
 
 ## `methods/`
 

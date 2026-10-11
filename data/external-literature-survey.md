@@ -80,10 +80,22 @@ recorded as a real, unresolved discrepancy between a secondary summary and the p
 resolved in either direction; the primary-source figure (0.513) is the one this project treats as
 authoritative going forward, per this project's own direct-fetch-over-search-summary discipline.
 
-## 3. Other leads surfaced, not yet directly verified (flagged for a future pass)
+## 3. Wynn et al. (2025) — directly verified, 2026-10-11
 
-- **Wynn et al. (2025)** — reported (search-synthesis tier only) to document how alignment pressure within
-  a debate-style multi-agent loop can suppress correct minority views. Not yet directly fetched.
+**"Talk Isn't Always Cheap: Understanding Failure Modes in Multi-Agent Debate"** — Andrea Wynn, Harsh
+Satija, Gillian Hadfield (arXiv:2509.05396, ICML MAS Workshop 2025). Directly fetched abstract, not a
+search summary. Real, citable findings: debate "can sometimes be harmful rather than helpful," accuracy
+"can decline over time" even when stronger models outnumber weaker ones, and models "frequently shift from
+correct to incorrect answers in response to peer reasoning" — favoring agreement over scrutinizing flawed
+reasoning. **Disclosed correction**: the original search-summary framing ("alignment pressure suppresses
+correct minority views") does not appear in the abstract itself — the closer, directly-verified framing is
+"social conformity" and peer-agreement bias, a related but not identical claim. **Relevant to this
+project**: a real, citable reason not to assume more back-and-forth discussion between Claude and ChatGPT
+is automatically better — debate accuracy can decline with more rounds, driven by conformity rather than
+correctness. See `logs/2026-10-11-sq2-wynn-debate-failure-modes-verified.md`.
+
+## 4. Other leads, not yet directly verified (flagged for a future pass)
+
 - **Xu et al. (2026)** — reported (search-synthesis tier only) to find simpler single-agent baselines, given
   the same tools and context, often match or exceed multi-agent workflows at lower cost — a useful
   counterweight worth checking directly before this project leans too hard on "more agents helps."
@@ -94,9 +106,10 @@ authoritative going forward, per this project's own direct-fetch-over-search-sum
 
 ## Honest bottom line
 
-Two real, directly-fetched, citable academic sources now on file (MAST's 14-mode failure taxonomy; the
-Google scaling-agent-systems paper's topology/error-amplification findings), both with at least one
-disclosed correction to an initial search-summary figure that didn't survive a primary check. This is a
-first pass, not a comprehensive survey — the three further leads above remain unverified, and no formal
+Three real, directly-fetched, citable academic sources now on file (MAST's 14-mode failure taxonomy; the
+Google scaling-agent-systems paper's topology/error-amplification findings; Wynn et al.'s debate-failure-
+mode findings), each with at least one disclosed correction to an initial search-summary characterization
+that didn't survive a primary check. This is a first pass, not a comprehensive survey — Xu et al. (2026)
+and the vendor/blog-tier material remain unverified, and no formal
 comparison between this project's own 5-incident catalog and MAST's taxonomy has been attempted yet (named
 as the natural next step).

@@ -64,5 +64,8 @@ silently dropped — see `methods/falsification-standard.md`.)_
   coordination amplifies errors up to 17.2x vs. 4.4x for centralized coordination, and that multi-agent
   coordination helps parallelizable tasks but hurts sequential ones. See
   `data/external-literature-survey.md`. Two search-summary figures explicitly did not survive a
-  primary-source check and are not relied upon. Not yet done: mapping SQ-1's own incident catalog against
-  MAST's specific failure-mode labels.
+  primary-source check and are not relied upon. **Update (2026-10-11)**: a third source verified — Wynn et
+  al. (arXiv:2509.05396) on multi-agent debate failure modes (accuracy can decline over rounds, driven by
+  social conformity, not correctness) — with a disclosed correction to its original search-summary framing.
+  Relevant to any future protocol experiment involving extended back-and-forth with ChatGPT. Xu et al.
+  (2026) remains the one unverified lead.

@@ -55,6 +55,14 @@ frameworks, not an async, session-scoped, human-supervised model like this famil
 SQ-3: don't adopt MAST's modes wholesale; this project needs its own vocabulary, built around its own
 distinctive failure types (cross-session scheduling/liveness above all).
 
+**Update (2026-10-11), Wynn et al. verified — see `logs/2026-10-11-sq2-wynn-debate-failure-modes-verified.md`**:
+directly fetched the paper this project had only had a search-summary characterization of. Confirms real,
+citable findings (debate accuracy can decline over time, driven by conformity, not correctness) but
+corrects the original framing ("alignment pressure suppresses minority views" doesn't appear in the
+abstract; "social conformity" is the more precise, directly-verified claim). Relevant to any future
+protocol experiment involving back-and-forth discussion between Claude and ChatGPT. Xu et al. (2026)
+remains the one unverified lead left from the original survey.
+
 ## SQ-3 — Metrics framework
 
 **Purpose:** define, before any protocol experiment runs, the specific operationalized metrics this project will use to measure collaboration quality — so metrics aren't picked after the fact to favor a preferred outcome.
