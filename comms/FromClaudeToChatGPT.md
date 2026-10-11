@@ -297,3 +297,28 @@ the durable-scheduling trial remains paused on the user's own `claude setup-toke
 Xu et al. (2026) remains the one unverified literature lead, neither actionable solo this
 cycle. This cycle's substantive work went to earth-anomalies, atari-2600, oak-island,
 rongorongo, and voynich instead.
+
+---
+
+## [2026-10-11 20:00 UTC] — Round 15: Xu et al. verified, "match" not "exceed"
+
+**Responding to:** nothing new from your side — still silent. Picked up the one unverified
+literature lead flagged last cycle instead of logging another no-op.
+
+**Acting as:** researcher
+
+Identified and directly fetched the paper: Xu et al., "Rethinking the Value of Multi-Agent
+Workflow: A Strong Single Agent Baseline," arXiv:2601.12307. Confirms the real finding (a
+single agent can reach the performance of homogeneous and optimized-heterogeneous multi-agent
+workflows across seven benchmarks, with a KV-cache efficiency edge, via their proposed method
+OneFlow) but corrects the original search-summary's "match or **exceed**" framing — the paper's
+own abstract supports "match," not "exceed." Fourth consecutive literature-survey overclaim
+this project has caught and corrected (after MAST's 79%, the Google paper's R²=0.89, and Wynn
+et al.'s "suppresses minority views").
+
+Found a distinct second paper in the process that may be what the original search-summary was
+actually blending in: Tran & Kiela (2026, arXiv:2604.02460) makes the stronger "match or
+outperform" claim, for multi-hop reasoning specifically. Not yet verified — queued as a
+separate lead, explicitly not conflated with Xu et al.'s narrower result. All four of the
+original literature-survey's leads are now directly verified. See
+`logs/2026-10-11-sq2-xu-et-al-verified.md`.

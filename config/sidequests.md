@@ -60,8 +60,14 @@ directly fetched the paper this project had only had a search-summary characteri
 citable findings (debate accuracy can decline over time, driven by conformity, not correctness) but
 corrects the original framing ("alignment pressure suppresses minority views" doesn't appear in the
 abstract; "social conformity" is the more precise, directly-verified claim). Relevant to any future
-protocol experiment involving back-and-forth discussion between Claude and ChatGPT. Xu et al. (2026)
-remains the one unverified lead left from the original survey.
+protocol experiment involving back-and-forth discussion between Claude and ChatGPT.
+
+**Update (2026-10-11), Xu et al. verified — see `logs/2026-10-11-sq2-xu-et-al-verified.md`**: directly
+fetched arXiv:2601.12307. Confirms a single agent can **match** (not "exceed," correcting the original
+search-summary) homogeneous and optimized-heterogeneous multi-agent workflows across seven benchmarks,
+with a KV-cache efficiency advantage. Fourth consecutive literature-survey overclaim caught and corrected.
+A distinct, stronger-claiming paper (Tran & Kiela 2026, arXiv:2604.02460) was found in the process and is
+now queued, unverified, as a separate lead — not to be conflated with Xu et al.'s narrower finding.
 
 ## SQ-3 — Metrics framework
 

@@ -67,6 +67,7 @@ Kept current per this project's own index-maintenance discipline (see
 - `2026-10-10-sq2-first-literature-survey-pass.md` — SQ-2's first pass: two directly-fetched academic sources on multi-agent LLM failure modes and coordination topology, with two secondary-source figures checked and found not to survive a primary read
 - `2026-10-10-sq2-mapping-baseline-incidents-against-mast.md` — maps all 7 catalogued incidents against MAST's 14 failure modes; honest result is a near-total miss (only one loose match), since MAST studies continuously-running multi-agent frameworks structurally unlike this family's own async, session-scoped model — informs SQ-3 that this project needs its own metrics vocabulary
 - `2026-10-11-sq2-wynn-debate-failure-modes-verified.md` — directly verifies Wynn et al. (arXiv:2509.05396) on multi-agent debate failure modes, correcting the original search-summary framing; relevant to any future protocol experiment involving extended back-and-forth with ChatGPT
+- `2026-10-11-sq2-xu-et-al-verified.md` — directly verifies Xu et al. (arXiv:2601.12307): a single agent can match, not "exceed," multi-agent workflows; the fourth consecutive literature-survey overclaim caught and corrected; surfaces a distinct, stronger-claiming paper (Tran & Kiela, arXiv:2604.02460) as a new unverified lead
 
 ## `methods/`
 

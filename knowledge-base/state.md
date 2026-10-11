@@ -67,5 +67,10 @@ silently dropped — see `methods/falsification-standard.md`.)_
   primary-source check and are not relied upon. **Update (2026-10-11)**: a third source verified — Wynn et
   al. (arXiv:2509.05396) on multi-agent debate failure modes (accuracy can decline over rounds, driven by
   social conformity, not correctness) — with a disclosed correction to its original search-summary framing.
-  Relevant to any future protocol experiment involving extended back-and-forth with ChatGPT. Xu et al.
-  (2026) remains the one unverified lead.
+  Relevant to any future protocol experiment involving extended back-and-forth with ChatGPT.
+  **Update (2026-10-11)**: Xu et al. (2026, arXiv:2601.12307) now directly verified too — a single agent
+  can **match** (not "exceed," correcting the original search-summary) multi-agent workflows across seven
+  benchmarks. Fourth consecutive overclaim this survey has caught and corrected. A separate, stronger-
+  claiming paper (Tran & Kiela 2026, arXiv:2604.02460) surfaced in the process and is now the one
+  unverified lead, queued for a future pass — not to be conflated with Xu et al.'s narrower finding. See
+  `logs/2026-10-11-sq2-xu-et-al-verified.md`.

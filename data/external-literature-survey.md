@@ -96,20 +96,37 @@ correctness. See `logs/2026-10-11-sq2-wynn-debate-failure-modes-verified.md`.
 
 ## 4. Other leads, not yet directly verified (flagged for a future pass)
 
-- **Xu et al. (2026)** — reported (search-synthesis tier only) to find simpler single-agent baselines, given
-  the same tools and context, often match or exceed multi-agent workflows at lower cost — a useful
-  counterweight worth checking directly before this project leans too hard on "more agents helps."
 - **Protocol-level practitioner guidance** (structured messaging standards like MCP, "judge agent" patterns
   for catching hallucination/premature termination/spec violations before cascade) — explicitly **vendor/
-  blog-tier, not peer-reviewed**, named here only to keep it clearly separated from the two academic sources
+  blog-tier, not peer-reviewed**, named here only to keep it clearly separated from the academic sources
   above, per this sidequest's own scope requirement to distinguish research findings from marketing material.
+- **Tran & Kiela (2026)**, arXiv:2604.02460 — newly surfaced while verifying Xu et al. below. Reported
+  (search-synthesis tier only, not yet directly fetched) to make a stronger claim than Xu et al.: that
+  single-agent systems can match **or outperform** multi-agent systems under normalized compute, for
+  multi-hop reasoning specifically, arguing from the Data Processing Inequality. A distinct paper and
+  claim from Xu et al. below — not to be conflated with it. Unverified, open for a future pass.
+
+## 4a. Xu et al. (2026) — directly verified, 2026-10-11
+
+Xu, Koesdwiady, Bei, Han, Huang, Wang, Chen, Wang, Wang, Li & Ding, "Rethinking the Value of
+Multi-Agent Workflow: A Strong Single Agent Baseline," arXiv:2601.12307. Directly fetched the
+abstract page. **Verified claim**: a single agent using multi-turn conversation "can reach the
+performance of" homogeneous multi-agent workflows and "can even match" an automatically
+optimized heterogeneous workflow, with an efficiency advantage from KV-cache reuse; introduces
+**OneFlow**, tested across seven benchmarks (coding, mathematics, general QA, domain-specific
+reasoning, real-world planning/tool use). **Disclosed correction**: the original search-summary
+framing ("match or **exceed**") overclaims — the paper's own abstract supports "match," not
+"exceed." The fourth instance of this project's own literature survey catching a search-summary
+overclaim (after MAST's 79%, the Google paper's R²=0.89, and Wynn et al.'s "suppresses minority
+views"). See `logs/2026-10-11-sq2-xu-et-al-verified.md`.
 
 ## Honest bottom line
 
-Three real, directly-fetched, citable academic sources now on file (MAST's 14-mode failure taxonomy; the
+Four real, directly-fetched, citable academic sources now on file (MAST's 14-mode failure taxonomy; the
 Google scaling-agent-systems paper's topology/error-amplification findings; Wynn et al.'s debate-failure-
-mode findings), each with at least one disclosed correction to an initial search-summary characterization
-that didn't survive a primary check. This is a first pass, not a comprehensive survey — Xu et al. (2026)
-and the vendor/blog-tier material remain unverified, and no formal
+mode findings; and now Xu et al.'s single-agent-baseline finding), each with at least one disclosed
+correction to an initial search-summary characterization that didn't survive a primary check. This is
+still not a comprehensive survey — the vendor/blog-tier material and the newly-surfaced Tran & Kiela paper
+remain unverified, and no formal
 comparison between this project's own 5-incident catalog and MAST's taxonomy has been attempted yet (named
 as the natural next step).
