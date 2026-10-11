@@ -68,6 +68,7 @@ Kept current per this project's own index-maintenance discipline (see
 - `2026-10-10-sq2-mapping-baseline-incidents-against-mast.md` — maps all 7 catalogued incidents against MAST's 14 failure modes; honest result is a near-total miss (only one loose match), since MAST studies continuously-running multi-agent frameworks structurally unlike this family's own async, session-scoped model — informs SQ-3 that this project needs its own metrics vocabulary
 - `2026-10-11-sq2-wynn-debate-failure-modes-verified.md` — directly verifies Wynn et al. (arXiv:2509.05396) on multi-agent debate failure modes, correcting the original search-summary framing; relevant to any future protocol experiment involving extended back-and-forth with ChatGPT
 - `2026-10-11-sq2-xu-et-al-verified.md` — directly verifies Xu et al. (arXiv:2601.12307): a single agent can match, not "exceed," multi-agent workflows; the fourth consecutive literature-survey overclaim caught and corrected; surfaces a distinct, stronger-claiming paper (Tran & Kiela, arXiv:2604.02460) as a new unverified lead
+- `2026-10-12-sq2-tran-kiela-verified.md` — directly verifies Tran & Kiela (arXiv:2604.02460): the single-agent "match or outperform" claim is conditional on holding reasoning-token budgets constant, not unconditional; names "budget-control artifacts" as a concrete caution for this project's own future protocol-experiment design
 
 ## `methods/`
 

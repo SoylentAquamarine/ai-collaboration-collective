@@ -73,4 +73,9 @@ silently dropped — see `methods/falsification-standard.md`.)_
   benchmarks. Fourth consecutive overclaim this survey has caught and corrected. A separate, stronger-
   claiming paper (Tran & Kiela 2026, arXiv:2604.02460) surfaced in the process and is now the one
   unverified lead, queued for a future pass — not to be conflated with Xu et al.'s narrower finding. See
-  `logs/2026-10-11-sq2-xu-et-al-verified.md`.
+  `logs/2026-10-11-sq2-xu-et-al-verified.md`. **Update (2026-10-12)**: Tran & Kiela now verified too — the
+  claim is conditional (holds when reasoning-token budgets are held constant), not unconditional; the
+  paper's real contribution is identifying "budget-control artifacts" that can make reported multi-agent
+  gains look architectural when they're really unaccounted compute/context-budget effects — a concrete
+  caution for this project's own future protocol-experiment design. All five original survey leads are
+  now directly verified. See `logs/2026-10-12-sq2-tran-kiela-verified.md`.

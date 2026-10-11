@@ -69,6 +69,15 @@ with a KV-cache efficiency advantage. Fourth consecutive literature-survey overc
 A distinct, stronger-claiming paper (Tran & Kiela 2026, arXiv:2604.02460) was found in the process and is
 now queued, unverified, as a separate lead — not to be conflated with Xu et al.'s narrower finding.
 
+**Update (2026-10-12), Tran & Kiela verified too — see `logs/2026-10-12-sq2-tran-kiela-verified.md`**:
+directly fetched arXiv:2604.02460. The claim is conditional, not unconditional — single-agent systems
+match or outperform multi-agent systems on multi-hop reasoning specifically **when reasoning-token
+budgets are held constant**; the paper's own real contribution is identifying "budget-control artifacts"
+that can make reported multi-agent gains look architectural when they're actually unaccounted compute/
+context-budget effects. A real, citable caution for this project's own future protocol-experiment
+design. All five literature leads from the original survey are now directly verified; only vendor/
+blog-tier material remains unverified.
+
 ## SQ-3 — Metrics framework
 
 **Purpose:** define, before any protocol experiment runs, the specific operationalized metrics this project will use to measure collaboration quality — so metrics aren't picked after the fact to favor a preferred outcome.

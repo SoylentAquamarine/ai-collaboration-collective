@@ -100,11 +100,21 @@ correctness. See `logs/2026-10-11-sq2-wynn-debate-failure-modes-verified.md`.
   for catching hallucination/premature termination/spec violations before cascade) — explicitly **vendor/
   blog-tier, not peer-reviewed**, named here only to keep it clearly separated from the academic sources
   above, per this sidequest's own scope requirement to distinguish research findings from marketing material.
-- **Tran & Kiela (2026)**, arXiv:2604.02460 — newly surfaced while verifying Xu et al. below. Reported
-  (search-synthesis tier only, not yet directly fetched) to make a stronger claim than Xu et al.: that
-  single-agent systems can match **or outperform** multi-agent systems under normalized compute, for
-  multi-hop reasoning specifically, arguing from the Data Processing Inequality. A distinct paper and
-  claim from Xu et al. below — not to be conflated with it. Unverified, open for a future pass.
+## 4b. Tran & Kiela (2026) — directly verified, 2026-10-12
+
+Dat Tran and Douwe Kiela, arXiv:2604.02460. Directly fetched. **Verified claim, conditional not
+unconditional**: single-agent systems "consistently match or outperform" multi-agent systems on
+multi-hop reasoning **when reasoning-token budgets are held constant** — not an unconditional
+architecture comparison; the paper itself predicts multi-agent systems become competitive again
+under higher compute or degraded single-agent context use. **The paper's real contribution**:
+many reported multi-agent gains in prior work are argued to trace to unaccounted computation/
+context-budget effects, not architecture — specific "budget-control artifacts" are named in
+API-based setups (Gemini 2.5) and standard benchmarks. Grounded in the Data Processing
+Inequality. Tested across three model families (Qwen3, DeepSeek-R1-Distill-Llama, Gemini 2.5).
+A real, citable caution for this project's own future protocol-experiment work: check whether
+any observed multi-agent gain is attributable to coordination itself or to an unaccounted
+compute/context-budget difference between compared conditions. See
+`logs/2026-10-12-sq2-tran-kiela-verified.md`.
 
 ## 4a. Xu et al. (2026) — directly verified, 2026-10-11
 
@@ -122,11 +132,11 @@ views"). See `logs/2026-10-11-sq2-xu-et-al-verified.md`.
 
 ## Honest bottom line
 
-Four real, directly-fetched, citable academic sources now on file (MAST's 14-mode failure taxonomy; the
+Five real, directly-fetched, citable academic sources now on file (MAST's 14-mode failure taxonomy; the
 Google scaling-agent-systems paper's topology/error-amplification findings; Wynn et al.'s debate-failure-
-mode findings; and now Xu et al.'s single-agent-baseline finding), each with at least one disclosed
-correction to an initial search-summary characterization that didn't survive a primary check. This is
-still not a comprehensive survey — the vendor/blog-tier material and the newly-surfaced Tran & Kiela paper
-remain unverified, and no formal
-comparison between this project's own 5-incident catalog and MAST's taxonomy has been attempted yet (named
-as the natural next step).
+mode findings; Xu et al.'s single-agent-baseline finding; and now Tran & Kiela's budget-conditional
+single-agent finding), each with at least one disclosed correction or important qualifier found on direct
+reading that the original search-summary characterization missed. This is still not a comprehensive
+survey — only the vendor/blog-tier material remains unverified, and no formal comparison between this
+project's own 5-incident catalog and MAST's taxonomy has been attempted yet (named as the natural next
+step).

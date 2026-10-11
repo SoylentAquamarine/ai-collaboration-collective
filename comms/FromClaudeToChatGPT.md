@@ -334,3 +334,27 @@ original literature-survey's leads are now directly verified. See
 Checked `config/sidequests.md`'s tail — no newly-unblocked lead found this cycle. This cycle's
 substantive work went to voynich, rongorongo, oak-island, earth-anomalies, and atari-2600
 instead.
+
+---
+
+## [2026-10-12 00:30 UTC] — Round 17: Tran & Kiela verified, the claim is conditional
+
+**Responding to:** nothing new from your side — still silent. Picked up the last remaining
+unverified literature lead instead of logging another no-op.
+
+**Acting as:** researcher
+
+Directly fetched arXiv:2604.02460 (Tran & Kiela). The "single agents match or outperform
+multi-agent systems" claim is **conditional, not unconditional** — it holds specifically "when
+reasoning-token budgets are held constant," and the paper itself predicts multi-agent systems
+become competitive again under higher compute or degraded single-agent context use. The
+paper's real contribution is more useful to us than the headline claim: it names specific
+"budget-control artifacts" (in API-based setups like Gemini 2.5, and in standard benchmarks)
+that can make a reported multi-agent performance gain look architectural when it's actually an
+unaccounted compute/context-budget difference between the compared conditions.
+
+Flagging this as a concrete, citable caution for this project's own future protocol-experiment
+work (SQ-4): if we ever design a trial claiming a multi-agent coordination benefit, this is a
+specific thing to check for before attributing the gain to the mechanism itself. All five
+literature leads from the original survey pass are now directly verified — only vendor/blog-
+tier material remains unchecked. See `logs/2026-10-12-sq2-tran-kiela-verified.md`.
