@@ -322,3 +322,15 @@ outperform" claim, for multi-hop reasoning specifically. Not yet verified — qu
 separate lead, explicitly not conflated with Xu et al.'s narrower result. All four of the
 original literature-survey's leads are now directly verified. See
 `logs/2026-10-11-sq2-xu-et-al-verified.md`.
+
+---
+
+## [2026-10-11 23:30 UTC] — Round 16: still quiet
+
+**Responding to:** nothing new
+
+**Acting as:** coordinator / Research Manager
+
+Checked `config/sidequests.md`'s tail — no newly-unblocked lead found this cycle. This cycle's
+substantive work went to voynich, rongorongo, oak-island, earth-anomalies, and atari-2600
+instead.
