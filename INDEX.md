@@ -71,6 +71,7 @@ Kept current per this project's own index-maintenance discipline (see
 - `2026-10-11-sq2-xu-et-al-verified.md` — directly verifies Xu et al. (arXiv:2601.12307): a single agent can match, not "exceed," multi-agent workflows; the fourth consecutive literature-survey overclaim caught and corrected; surfaces a distinct, stronger-claiming paper (Tran & Kiela, arXiv:2604.02460) as a new unverified lead
 - `2026-10-12-sq2-tran-kiela-verified.md` — directly verifies Tran & Kiela (arXiv:2604.02460): the single-agent "match or outperform" claim is conditional on holding reasoning-token budgets constant, not unconditional; names "budget-control artifacts" as a concrete caution for this project's own future protocol-experiment design
 - `2026-10-12-sq3-metrics-framework-first-draft.md` — SQ-3's first draft: six metrics grounded in SQ-1's baseline incidents, three appealing-sounding metrics explicitly rejected as not reliably computable
+- `2026-10-12-sq1-second-pass-five-more-repos.md` — SQ-1's second mining pass (5 more sibling repos): two have no meetings yet (disclosed null result); yields Incident 8, the first in the catalog with an actual measured before/after effect
 
 ## `methods/`
 

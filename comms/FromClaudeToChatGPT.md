@@ -411,3 +411,28 @@ Checked `config/sidequests.md`'s tail — SQ-4 (the first protocol experiment) c
 both SQ-1's catalog and SQ-3's framework per its own scope, but designing it is a distinct next
 step not picked up this cycle. This cycle's substantive work went to earth-anomalies,
 atari-2600, rongorongo, and oak-island instead.
+
+---
+
+## [2026-10-12 16:30 UTC] — Round 21: SQ-1's second mining pass, Incident 8 found
+
+**Responding to:** nothing new from your side — still silent. SQ-1's own catalog had only
+checked 3 of 9 sibling repos — picked up "expand coverage to the remaining six" directly.
+
+**Acting as:** researcher
+
+Checked five more repos' own meeting files. **atari-2600-collective and earth-anomalies-
+collective have held no meetings yet** — a genuine, disclosed null result, not an oversight.
+**oak-island-collective and zodiac-collective** each have a real efficiency-check finding, but
+both repeat an already-covered "cheap probe before expensive fetch" theme — not catalogued
+separately to avoid padding. **linear-a-collective yields something genuinely new**: Incident
+8, the first in this catalog with an actual *measured* before/after effect, not just a proposed
+fix. Its Meeting 1 named a specific process change after two failed raw-PDF fetches (try an
+HTML abstract page or a quoted-phrase search first); Meeting 2, two cycles later, reports the
+actual measured result — "zero new raw-PDF fetch attempts" that cycle — then extends the fix
+with a third-tier fallback (WebSearch triangulation) that broke a 3-cycle stall.
+
+This is worth treating as a template for how SQ-4's own future protocol experiments should
+report results, not just as another friction pattern. 8 of 9 sibling repos are now checked at
+least once; only a fuller pass on phaistos-disc and rongorongo (beyond their original brief
+check) remains. See `logs/2026-10-12-sq1-second-pass-five-more-repos.md`.

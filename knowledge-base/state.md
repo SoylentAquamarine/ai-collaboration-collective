@@ -25,7 +25,12 @@ metrics, each grounded in a specific incident above, with exact computation proc
 mechanical). Three appealing-sounding metrics explicitly rejected as not reliably computable (duplicated-
 work count, error-propagation caught-vs-missed — structurally uncountable on the "missed" side — and a
 reporting-style correlation). See `data/metrics-framework.md` and
-`logs/2026-10-12-sq3-metrics-framework-first-draft.md`.
+`logs/2026-10-12-sq3-metrics-framework-first-draft.md`. **Update (2026-10-12, same day)**: SQ-1's
+second mining pass checks 5 more sibling repos. `atari-2600-collective` and `earth-anomalies-
+collective` have no meetings yet (disclosed null result). `linear-a-collective` yields a genuinely
+new **Incident 8** — the first in this catalog with an actual measured before/after effect (a
+named process fix, then a measured result two cycles later). 8 of 9 sibling repos now checked at
+least once. See `logs/2026-10-12-sq1-second-pass-five-more-repos.md`.
 
 **Update (2026-10-10) — mapped against MAST's failure taxonomy (SQ-2), a real negative result**: only
 Incident 1 has even a loose MAST analog (FM-3.2, no/incomplete verification); the other six don't map

@@ -25,6 +25,16 @@ observation also recorded: the two AI parties' own meeting-writeup styles differ
 narrative detail, a candidate dimension for SQ-3's metrics framework. Next: expand coverage to the
 remaining six repos before treating this catalog as representative.
 
+**Update (2026-10-12), a second pass checks five more repos — see
+`logs/2026-10-12-sq1-second-pass-five-more-repos.md`**: `atari-2600-collective` and
+`earth-anomalies-collective` have held no meetings yet (a genuine, disclosed null result). `oak-island-
+collective` and `zodiac-collective` each have a real finding, but both repeat an already-covered "cheap
+probe before expensive fetch" theme, not catalogued separately to avoid padding. `linear-a-collective`
+yields a genuinely new **Incident 8** — the first in this catalog with an actual measured before/after
+effect (a named process fix in one meeting, a measured "zero new raw-PDF fetch attempts" result two
+cycles later in the next). 8 of 9 sibling repos now checked at least once; only a fuller pass on
+phaistos-disc-collective and rongorongo-collective remains.
+
 ## SQ-2 — External literature and framework survey
 
 **Purpose:** situate this project's work against existing published research and frameworks on multi-agent AI collaboration, outside this project's own family — so proposals build on, and are honestly compared against, what's already known rather than reinventing it from the sibling data alone.

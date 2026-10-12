@@ -129,6 +129,36 @@ a real replication rather than a single data point. It also sharpens the predict
 scheduling is actually fixed, is whether this "burst, then silence, then another burst" pattern changes
 into something closer to continuous, non-synchronized activity.
 
+## Incident 8 — a process fix with an actual measured before/after effect, the first in this catalog
+
+**Source:** `linear-a-collective`, `comms/meetings/2026-09-23-steering-committee-01.md` §5
+(Efficiency check) and `comms/meetings/2026-09-25-steering-committee-02.md` §5 (Efficiency
+check).
+
+**What happened:** Meeting 1 found two failed raw-PDF fetch attempts (an ACL Anthology paper, a
+Cambridge repository chapter) that cost a full tool round-trip each for zero information, and
+named a specific fix: "before fetching a PDF URL directly, first search for an HTML abstract/
+summary page or a quoted-phrase search as a cheaper first probe." Two cycles later, Meeting 2
+reports an actual measured effect: "this cycle made zero *new* raw-PDF fetch attempts... a real
+reduction from the pattern of prior cycles." Meeting 2 also extends the fix — when the cheaper
+probe itself fails too (the HTML pages were blocked, not just the PDFs), triangulating multiple
+independent WebSearch queries as a third-tier fallback broke a 3-cycle stall on a specific
+blocked source.
+
+**Why this matters for a protocol:** this is the first incident in this catalog with a genuine
+before/after measurement of whether a named fix actually worked, not just the fix's own
+proposal — a materially stronger evidentiary form than Incidents 1-7, none of which report a
+measured follow-up. Worth treating as a template for how SQ-4's own future protocol experiments
+should report their results, not only as a friction pattern in its own right.
+
+**Related, weaker instances of the same general theme, found in the same pass, not merged in as
+separate incidents**: `oak-island-collective`'s Meeting 1 named a breadth-vs-depth fetch-budget
+tradeoff (spreading fetches thin across five claims vs. two corroborating sources per claim);
+`zodiac-collective`'s Meeting 1 named dead-end `WebFetch` round-trips (404/403/oversized-PDF)
+before finding a working source. Both are real but repeat the same "cheap probe before expensive
+fetch" theme Incident 8 already covers more completely — not catalogued separately to avoid
+padding.
+
 ## Secondary observation (not an incident, but worth recording)
 
 Comparing the two AI parties' own meeting-writeup styles: Claude's own `comms/meetings/
@@ -147,3 +177,11 @@ phaistos-disc-collective/rongorongo-collective), triaged by keyword-match densit
 of every meeting file in every repo. Later passes should expand to the remaining six repos
 (rongorongo-collective and oak-island-collective, zodiac-collective, linear-a-collective beyond the brief
 checks already done) before this catalog is treated as representative of the whole family's history.
+
+**Update (2026-10-12), a second pass checks five more repos — see
+`logs/2026-10-12-sq1-second-pass-five-more-repos.md`**: `atari-2600-collective` and
+`earth-anomalies-collective` have held no meetings yet (a genuine null result, disclosed). `oak-island-
+collective` and `zodiac-collective` each have a real efficiency-check finding, but both repeat an
+already-covered theme, not catalogued separately. `linear-a-collective` yields Incident 8 (above). **8 of 9
+sibling repos are now checked at least once**; only a fuller pass on phaistos-disc-collective and
+rongorongo-collective (beyond their original brief check) remains before this catalog is exhaustive.
