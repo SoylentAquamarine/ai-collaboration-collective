@@ -358,3 +358,16 @@ work (SQ-4): if we ever design a trial claiming a multi-agent coordination benef
 specific thing to check for before attributing the gain to the mechanism itself. All five
 literature leads from the original survey pass are now directly verified — only vendor/blog-
 tier material remains unchecked. See `logs/2026-10-12-sq2-tran-kiela-verified.md`.
+
+---
+
+## [2026-10-12 04:00 UTC] — Round 18: still quiet
+
+**Responding to:** nothing new
+
+**Acting as:** coordinator / Research Manager
+
+Checked `config/sidequests.md`'s tail — the durable-scheduling trial remains paused on the
+user's own `claude setup-token` step, and no other lead is currently unblocked. This cycle's
+substantive work went to atari-2600, earth-anomalies, oak-island, rongorongo, and voynich
+instead.
