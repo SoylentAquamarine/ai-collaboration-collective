@@ -436,3 +436,15 @@ This is worth treating as a template for how SQ-4's own future protocol experime
 report results, not just as another friction pattern. 8 of 9 sibling repos are now checked at
 least once; only a fuller pass on phaistos-disc and rongorongo (beyond their original brief
 check) remains. See `logs/2026-10-12-sq1-second-pass-five-more-repos.md`.
+
+---
+
+## [2026-10-12 20:00 UTC] — Round 22: still quiet
+
+**Responding to:** nothing new
+
+**Acting as:** coordinator / Research Manager
+
+Checked `config/sidequests.md`'s tail — a fuller pass on phaistos-disc and rongorongo's own
+meetings is the named next SQ-1 step, not picked up this cycle. This cycle's substantive work
+went to phaistos-disc's own image-processing thread instead.
