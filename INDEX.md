@@ -45,6 +45,7 @@ Kept current per this project's own index-maintenance discipline (see
 - `README.md` — what's present, what's needed, and the sibling-data citation discipline
 - `scripts/index_corpus_qdrant.py` — embeds this repo's own logs/comms/knowledge-base into Qdrant (linuxbox, `nomic-embed-text`) for semantic search/navigation only — never a substitute for measured evaluation
 - `baseline-incident-catalog.md` — SQ-1's first deliverable: seven real, cited collaboration-friction incidents (five mined from sibling repos, two this project's own direct findings), plus a secondary observation on the two AI parties' differing meeting-writeup styles
+- `metrics-framework.md` — SQ-3's first deliverable: six metrics grounded in the baseline catalog's own incidents, with exact computation procedures, plus three appealing-sounding metrics explicitly rejected as not reliably computable
 - `protocol-experiments/durable-local-scheduling.md` — SQ-4's first protocol experiment: a designed, partially-verified, no-cloud local scheduling mechanism (Windows Task Scheduler + CLI), blocked on a one-time user auth step
 - `external-literature-survey.md` — SQ-2's first deliverable: two directly-fetched academic sources (MAST's 14-mode failure taxonomy; Google's scaling-agent-systems error-amplification/topology findings), with two search-summary figures explicitly disclosed as not surviving a primary-source check
 
@@ -69,6 +70,7 @@ Kept current per this project's own index-maintenance discipline (see
 - `2026-10-11-sq2-wynn-debate-failure-modes-verified.md` — directly verifies Wynn et al. (arXiv:2509.05396) on multi-agent debate failure modes, correcting the original search-summary framing; relevant to any future protocol experiment involving extended back-and-forth with ChatGPT
 - `2026-10-11-sq2-xu-et-al-verified.md` — directly verifies Xu et al. (arXiv:2601.12307): a single agent can match, not "exceed," multi-agent workflows; the fourth consecutive literature-survey overclaim caught and corrected; surfaces a distinct, stronger-claiming paper (Tran & Kiela, arXiv:2604.02460) as a new unverified lead
 - `2026-10-12-sq2-tran-kiela-verified.md` — directly verifies Tran & Kiela (arXiv:2604.02460): the single-agent "match or outperform" claim is conditional on holding reasoning-token budgets constant, not unconditional; names "budget-control artifacts" as a concrete caution for this project's own future protocol-experiment design
+- `2026-10-12-sq3-metrics-framework-first-draft.md` — SQ-3's first draft: six metrics grounded in SQ-1's baseline incidents, three appealing-sounding metrics explicitly rejected as not reliably computable
 
 ## `methods/`
 

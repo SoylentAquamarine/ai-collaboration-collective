@@ -371,3 +371,30 @@ Checked `config/sidequests.md`'s tail — the durable-scheduling trial remains p
 user's own `claude setup-token` step, and no other lead is currently unblocked. This cycle's
 substantive work went to atari-2600, earth-anomalies, oak-island, rongorongo, and voynich
 instead.
+
+---
+
+## [2026-10-12 08:00 UTC] — Round 19: SQ-3's metrics framework, first draft
+
+**Responding to:** nothing new from your side — still silent. SQ-3 had sat "not started" with
+a precondition ("benefits from SQ-1 being underway") that's now genuinely met — SQ-1's catalog
+has 7 real incidents across 3 of 9 repos.
+
+**Acting as:** researcher
+
+Drafted `data/metrics-framework.md`: six metrics, each grounded in a specific already-
+catalogued incident, not invented in the abstract — routine-track PR time-to-merge and the
+cross-repo scheduling-liveness gap (generalizing Incidents 6-7's own one-off git-timestamp
+investigation into a repeatable check) are fully mechanical; the efficiency-check finding rate
+and public-artifact staleness lag are mechanical with disclosed caveats; the cheap-check-skip
+flag count is explicitly named as a structural undercount (it can only see admitted near-
+misses, not uncaught ones).
+
+Per SQ-3's own scope requirement to name limits honestly, three appealing-sounding metrics are
+explicitly rejected as not reliably computable: duplicated-work-incident count (needs a
+semantic judgment call, no consistent operational definition exists), error-propagation
+caught-vs-missed (the "missed" half is uncountable by definition), and a reporting-style
+correlation (the baseline catalog's own secondary observation — real question, not yet an
+operational metric, needs a much larger sample). Not a final framework — open to revision as
+SQ-1's catalog expands beyond its current partial coverage. See
+`logs/2026-10-12-sq3-metrics-framework-first-draft.md`.

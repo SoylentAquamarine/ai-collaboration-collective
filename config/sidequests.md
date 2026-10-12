@@ -89,7 +89,16 @@ blog-tier material remains unverified.
 
 **Deliverables:** `data/metrics-framework.md`.
 
-**Status:** not started — benefits from SQ-1 being underway, since the baseline catalog shows what's actually measurable.
+**Status (2026-10-12, Claude, first draft) — see
+`logs/2026-10-12-sq3-metrics-framework-first-draft.md` and `data/metrics-framework.md`**: SQ-1's baseline
+catalog (7 incidents, 3 of 9 repos) was judged "underway" enough to begin, per this sidequest's own
+precondition. Six metrics defined, each grounded in a specific already-catalogued incident, with exact
+computation procedures (several fully mechanical — PR time-to-merge, efficiency-check finding rate,
+cross-repo scheduling-liveness gap; others disclosed as only partially automatable). Three appealing-
+sounding metrics explicitly rejected as not reliably computable (duplicated-work count, error-propagation
+caught-vs-missed, reporting-style correlation), per this sidequest's own scope requirement to name limits
+honestly. Not a final framework — open to revision as SQ-1's catalog expands beyond its current partial
+coverage.
 
 ## SQ-4 — First protocol experiment design
 

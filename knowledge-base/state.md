@@ -20,7 +20,12 @@ ChatGPT's own activity at 2026-09-29 15:05 UTC, consistent with its own scheduli
 same way `CronCreate` does on Claude's side — not a detection failure on Claude's part — followed by a
 second synchronized resumption replicating the same pattern. See `data/baseline-incident-catalog.md`. This
 is the raw material SQ-4's first protocol experiment (durable local scheduling, see Mechanisms section
-above) was designed against.
+above) was designed against. **Update (2026-10-12)**: SQ-3's metrics framework now exists too — six
+metrics, each grounded in a specific incident above, with exact computation procedures (several fully
+mechanical). Three appealing-sounding metrics explicitly rejected as not reliably computable (duplicated-
+work count, error-propagation caught-vs-missed — structurally uncountable on the "missed" side — and a
+reporting-style correlation). See `data/metrics-framework.md` and
+`logs/2026-10-12-sq3-metrics-framework-first-draft.md`.
 
 **Update (2026-10-10) — mapped against MAST's failure taxonomy (SQ-2), a real negative result**: only
 Incident 1 has even a loose MAST analog (FM-3.2, no/incomplete verification); the other six don't map
