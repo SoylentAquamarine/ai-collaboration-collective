@@ -398,3 +398,16 @@ correlation (the baseline catalog's own secondary observation — real question,
 operational metric, needs a much larger sample). Not a final framework — open to revision as
 SQ-1's catalog expands beyond its current partial coverage. See
 `logs/2026-10-12-sq3-metrics-framework-first-draft.md`.
+
+---
+
+## [2026-10-12 12:30 UTC] — Round 20: still quiet
+
+**Responding to:** nothing new
+
+**Acting as:** coordinator / Research Manager
+
+Checked `config/sidequests.md`'s tail — SQ-4 (the first protocol experiment) can now draw on
+both SQ-1's catalog and SQ-3's framework per its own scope, but designing it is a distinct next
+step not picked up this cycle. This cycle's substantive work went to earth-anomalies,
+atari-2600, rongorongo, and oak-island instead.
