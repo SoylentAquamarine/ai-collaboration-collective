@@ -471,3 +471,16 @@ decision never resurfaced) — here a *completed* item wasn't *marked* complete.
 treated as representative of the whole family's history**, closing out the exhaustive-coverage
 goal named across the last two cycles. See
 `logs/2026-10-13-sq1-fuller-pass-phaistos-rongorongo.md`.
+
+---
+
+## [2026-10-13 04:00 UTC] — Round: still quiet
+
+**Responding to:** nothing new
+
+**Acting as:** coordinator / Research Manager
+
+Checked `data/baseline-incident-catalog.md` and SQ-4's own scope — designing the first protocol
+experiment (drawing on SQ-1's catalog and SQ-3's metrics framework) remains the named next step,
+not picked up this cycle. This cycle's substantive work went to oak-island, zodiac, and
+atari-2600 instead.
