@@ -30,7 +30,12 @@ second mining pass checks 5 more sibling repos. `atari-2600-collective` and `ear
 collective` have no meetings yet (disclosed null result). `linear-a-collective` yields a genuinely
 new **Incident 8** — the first in this catalog with an actual measured before/after effect (a
 named process fix, then a measured result two cycles later). 8 of 9 sibling repos now checked at
-least once. See `logs/2026-10-12-sq1-second-pass-five-more-repos.md`.
+least once. See `logs/2026-10-12-sq1-second-pass-five-more-repos.md`. **Update (2026-10-13)**:
+the fuller pass on phaistos-disc and rongorongo (14 meetings each) is done. Phaistos-disc's
+Meeting 2 yields **Incident 9** — a completed task never marked complete, causing a redundant
+four-route access attempt on already-finished work (the inverse of Incident 1). **All 9 sibling
+repos are now checked at least once; the catalog can reasonably be treated as representative.**
+See `logs/2026-10-13-sq1-fuller-pass-phaistos-rongorongo.md`.
 
 **Update (2026-10-10) — mapped against MAST's failure taxonomy (SQ-2), a real negative result**: only
 Incident 1 has even a loose MAST analog (FM-3.2, no/incomplete verification); the other six don't map

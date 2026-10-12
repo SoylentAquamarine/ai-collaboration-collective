@@ -72,6 +72,7 @@ Kept current per this project's own index-maintenance discipline (see
 - `2026-10-12-sq2-tran-kiela-verified.md` — directly verifies Tran & Kiela (arXiv:2604.02460): the single-agent "match or outperform" claim is conditional on holding reasoning-token budgets constant, not unconditional; names "budget-control artifacts" as a concrete caution for this project's own future protocol-experiment design
 - `2026-10-12-sq3-metrics-framework-first-draft.md` — SQ-3's first draft: six metrics grounded in SQ-1's baseline incidents, three appealing-sounding metrics explicitly rejected as not reliably computable
 - `2026-10-12-sq1-second-pass-five-more-repos.md` — SQ-1's second mining pass (5 more sibling repos): two have no meetings yet (disclosed null result); yields Incident 8, the first in the catalog with an actual measured before/after effect
+- `2026-10-13-sq1-fuller-pass-phaistos-rongorongo.md` — the fuller pass on phaistos-disc and rongorongo (14 meetings each), completing SQ-1's exhaustive 9-of-9 coverage; yields Incident 9, a completed task never marked complete causing redundant re-work
 
 ## `methods/`
 

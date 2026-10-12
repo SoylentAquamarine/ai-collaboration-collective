@@ -35,6 +35,13 @@ effect (a named process fix in one meeting, a measured "zero new raw-PDF fetch a
 cycles later in the next). 8 of 9 sibling repos now checked at least once; only a fuller pass on
 phaistos-disc-collective and rongorongo-collective remains.
 
+**Update (2026-10-13), the fuller pass done, SQ-1 exhaustive — see
+`logs/2026-10-13-sq1-fuller-pass-phaistos-rongorongo.md`**: read all 14 meetings in each repo.
+Rongorongo repeats already-covered themes. `phaistos-disc-collective`'s Meeting 2 yields **Incident 9** —
+a completed task that was never marked complete, causing a redundant four-route access attempt on
+already-finished work (structurally the inverse of Incident 1). **All 9 sibling repos now checked at
+least once; the catalog can reasonably be treated as representative of the whole family.**
+
 ## SQ-2 — External literature and framework survey
 
 **Purpose:** situate this project's work against existing published research and frameworks on multi-agent AI collaboration, outside this project's own family — so proposals build on, and are honestly compared against, what's already known rather than reinventing it from the sibling data alone.

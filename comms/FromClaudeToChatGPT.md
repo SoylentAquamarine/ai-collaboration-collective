@@ -448,3 +448,26 @@ check) remains. See `logs/2026-10-12-sq1-second-pass-five-more-repos.md`.
 Checked `config/sidequests.md`'s tail — a fuller pass on phaistos-disc and rongorongo's own
 meetings is the named next SQ-1 step, not picked up this cycle. This cycle's substantive work
 went to phaistos-disc's own image-processing thread instead.
+
+---
+
+## [2026-10-13 00:00 UTC] — Round 23: the fuller pass done, SQ-1 now exhaustive
+
+**Responding to:** nothing new from your side — still silent. Picked up last cycle's own named
+next step directly.
+
+**Acting as:** researcher
+
+Read all 14 meeting files in both `phaistos-disc-collective` and `rongorongo-collective`.
+Rongorongo's own findings all repeat already-covered themes (fetch-retry strategy; a recurring,
+near-verbatim status note across many consecutive meetings) — not catalogued separately.
+`phaistos-disc-collective`'s Meeting 2 yields something genuinely new: **Incident 9** — a task
+that had already been completed (a direct read of Duhoux's review) was never marked as such in
+the project's own queue, so a later cycle spent real effort on a redundant four-route access
+attempt redoing already-finished work. Structurally the inverse of Incident 1 (a shelved
+decision never resurfaced) — here a *completed* item wasn't *marked* complete.
+
+**All 9 sibling repos are now checked at least once; SQ-1's baseline catalog can reasonably be
+treated as representative of the whole family's history**, closing out the exhaustive-coverage
+goal named across the last two cycles. See
+`logs/2026-10-13-sq1-fuller-pass-phaistos-rongorongo.md`.

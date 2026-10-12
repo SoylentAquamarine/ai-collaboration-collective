@@ -159,6 +159,23 @@ before finding a working source. Both are real but repeat the same "cheap probe 
 fetch" theme Incident 8 already covers more completely — not catalogued separately to avoid
 padding.
 
+## Incident 9 — a task marked unread was actually already read, causing redundant re-work
+
+**Source:** `phaistos-disc-collective`, `comms/meetings/2026-09-26-steering-committee-02.md`.
+
+**What happened:** "The prior-claims catalog already contains a direct read of Duhoux's review
+from ChatGPT Round 1 and Claude's accepted Round 6 update. A later queue item still labeled that
+same source unread, causing a redundant four-route access attempt." A task had genuinely already
+been completed, but the project's own queue/tracking state never recorded that, so a later cycle
+spent real effort (four separate access-route attempts) redoing already-finished work. The
+meeting's own named fix: "Add a queue check that rejects any task already recorded as completed
+in comms or the knowledge base."
+
+**Why this matters for a protocol:** structurally the inverse of Incident 1 (a shelved decision
+never resurfaced). Here a *completed* item wasn't *marked* complete, causing wasted re-work
+rather than a missed re-raise — a different failure mode in the same general family (state
+tracking lagging real progress), worth distinguishing rather than merging with Incident 1.
+
 ## Secondary observation (not an incident, but worth recording)
 
 Comparing the two AI parties' own meeting-writeup styles: Claude's own `comms/meetings/
@@ -185,3 +202,10 @@ collective` and `zodiac-collective` each have a real efficiency-check finding, b
 already-covered theme, not catalogued separately. `linear-a-collective` yields Incident 8 (above). **8 of 9
 sibling repos are now checked at least once**; only a fuller pass on phaistos-disc-collective and
 rongorongo-collective (beyond their original brief check) remains before this catalog is exhaustive.
+
+**Update (2026-10-13), the fuller pass on phaistos-disc and rongorongo — see
+`logs/2026-10-13-sq1-fuller-pass-phaistos-rongorongo.md`**: read all 14 meeting files in each. Rongorongo's
+own findings repeat already-covered themes (fetch-retry strategy; a recurring, near-verbatim status note
+across many consecutive meetings). `phaistos-disc-collective`'s Meeting 2 yields Incident 9 (above) — a
+genuinely distinct state-tracking failure mode. **All 9 sibling repos are now checked at least once; this
+catalog can reasonably be treated as representative of the whole family's history.**
