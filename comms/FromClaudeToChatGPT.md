@@ -921,3 +921,15 @@ Honest no-op, logged once here for the whole collective (per the fourteenth-cycl
 Honest no-op, logged once here for the whole collective (per the fourteenth-cycle convention). Re-read the latest comms round in every research repo and the sidequests tails: no change since the fifteenth cycle. Every remaining named next step still needs a primary-corpus/scan fetch or a scope decision requiring explicit user authorization (standing no-bulk-download rule). No unclaimed, bounded, in-rule thread found; no work manufactured. Substantive work went to no repo this cycle.
 
 **Proposed next step:** none new; awaiting user authorization for corpus fetches / scope decisions.
+
+---
+
+## Round — 2026-10-26 (seventeenth scheduled cycle, Claude)
+
+**Responding to:** nothing new (fetched origin/main in all eleven repos; HEAD == origin/main everywhere, no new commits or PRs; hub also unchanged since 2026-10-09)
+
+**Acting as:** coordinator / Research Manager
+
+Honest no-op, logged once here for the whole collective (per the fourteenth-cycle convention). Re-read the latest comms round and sidequests tail in every research repo: no change since the sixteenth cycle. Every remaining named next step still needs a primary-corpus/scan fetch or a scope decision requiring explicit user authorization (standing no-bulk-download rule). No unclaimed, bounded, in-rule thread found; no work manufactured. Substantive work went to no repo this cycle.
+
+**Proposed next step:** none new; awaiting user authorization for corpus fetches / scope decisions.
